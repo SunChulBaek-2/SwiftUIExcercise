@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1AC4B4294C380000B3791A /* GetContentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1AC4B3294C380000B3791A /* GetContentUseCase.swift */; };
+		9F1AC4B8294C384300B3791A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1AC4B7294C384300B3791A /* Repository.swift */; };
+		9F1AC4BA294C386700B3791A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1AC4B9294C386700B3791A /* Model.swift */; };
+		9F1AC4BC294C3AFF00B3791A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1AC4BB294C3AFF00B3791A /* ContentViewModel.swift */; };
 		9FEB9419294C348C0018DE8C /* SwiftUIExcerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB9418294C348C0018DE8C /* SwiftUIExcerciseApp.swift */; };
 		9FEB941B294C348C0018DE8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB941A294C348C0018DE8C /* ContentView.swift */; };
 		9FEB941D294C348E0018DE8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB941C294C348E0018DE8C /* Assets.xcassets */; };
@@ -14,6 +18,7 @@
 		9FEB942B294C348E0018DE8C /* SwiftUIExcerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB942A294C348E0018DE8C /* SwiftUIExcerciseTests.swift */; };
 		9FEB9435294C348E0018DE8C /* SwiftUIExcerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB9434294C348E0018DE8C /* SwiftUIExcerciseUITests.swift */; };
 		9FEB9437294C348E0018DE8C /* SwiftUIExcerciseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB9436294C348E0018DE8C /* SwiftUIExcerciseUITestsLaunchTests.swift */; };
+		9FEB9445294C35E70018DE8C /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB9444294C35E70018DE8C /* UseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F1AC4B3294C380000B3791A /* GetContentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContentUseCase.swift; sourceTree = "<group>"; };
+		9F1AC4B7294C384300B3791A /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		9F1AC4B9294C386700B3791A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9F1AC4BB294C3AFF00B3791A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		9FEB9415294C348C0018DE8C /* SwiftUIExcercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExcercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEB9418294C348C0018DE8C /* SwiftUIExcerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExcerciseApp.swift; sourceTree = "<group>"; };
 		9FEB941A294C348C0018DE8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +54,7 @@
 		9FEB9430294C348E0018DE8C /* SwiftUIExcerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIExcerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEB9434294C348E0018DE8C /* SwiftUIExcerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExcerciseUITests.swift; sourceTree = "<group>"; };
 		9FEB9436294C348E0018DE8C /* SwiftUIExcerciseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExcerciseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FEB9444294C35E70018DE8C /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F1AC4B2294C37EB00B3791A /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				9F1AC4B3294C380000B3791A /* GetContentUseCase.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		9F1AC4B5294C381800B3791A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				9F1AC4B6294C382000B3791A /* model */,
+				9F1AC4B7294C384300B3791A /* Repository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		9F1AC4B6294C382000B3791A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9F1AC4B9294C386700B3791A /* Model.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		9FEB940C294C348B0018DE8C = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +130,14 @@
 		9FEB9417294C348C0018DE8C /* SwiftUIExcercise */ = {
 			isa = PBXGroup;
 			children = (
-				9FEB9418294C348C0018DE8C /* SwiftUIExcerciseApp.swift */,
-				9FEB941A294C348C0018DE8C /* ContentView.swift */,
 				9FEB941C294C348E0018DE8C /* Assets.xcassets */,
-				9FEB941E294C348E0018DE8C /* SwiftUIExcercise.entitlements */,
+				9FEB9443294C35D70018DE8C /* common */,
+				9F1AC4B5294C381800B3791A /* data */,
+				9F1AC4B2294C37EB00B3791A /* domain */,
 				9FEB941F294C348E0018DE8C /* Preview Content */,
+				9FEB941E294C348E0018DE8C /* SwiftUIExcercise.entitlements */,
+				9FEB9418294C348C0018DE8C /* SwiftUIExcerciseApp.swift */,
+				9FEB9446294C36A40018DE8C /* ui */,
 			);
 			path = SwiftUIExcercise;
 			sourceTree = "<group>";
@@ -127,6 +165,23 @@
 				9FEB9436294C348E0018DE8C /* SwiftUIExcerciseUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIExcerciseUITests;
+			sourceTree = "<group>";
+		};
+		9FEB9443294C35D70018DE8C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB9444294C35E70018DE8C /* UseCase.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		9FEB9446294C36A40018DE8C /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB941A294C348C0018DE8C /* ContentView.swift */,
+				9F1AC4BB294C3AFF00B3791A /* ContentViewModel.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEB9445294C35E70018DE8C /* UseCase.swift in Sources */,
 				9FEB941B294C348C0018DE8C /* ContentView.swift in Sources */,
+				9F1AC4B8294C384300B3791A /* Repository.swift in Sources */,
+				9F1AC4BC294C3AFF00B3791A /* ContentViewModel.swift in Sources */,
+				9F1AC4BA294C386700B3791A /* Model.swift in Sources */,
+				9F1AC4B4294C380000B3791A /* GetContentUseCase.swift in Sources */,
 				9FEB9419294C348C0018DE8C /* SwiftUIExcerciseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

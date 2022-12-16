@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = ContentViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, \(viewModel.state.name)")
+            Button("이름변경") {
+                viewModel.toggleName()
+            }
         }
         .padding()
+        .onAppear {
+            Task {
+                await viewModel.getContent()
+            }
+        }
+        .onDisappear {
+            
+        }
     }
 }
 
